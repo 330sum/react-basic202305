@@ -1,11 +1,14 @@
 import SayHello from './SayHello';
+import ChangeEvent from './component/chap01_event/ChangeEvent';
+import ClickEvent from './component/chap01_event/ClickEvent';
+import SubmitEvene from './component/chap01_event/SubmitEvent';
 
 
 function App() {
 
   const looping = () => {
     const helloList = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 2; i++) {
       helloList.push(<SayHello />);
     }
     return helloList;
@@ -19,6 +22,9 @@ function App() {
   return (
     <>
       { looping() }
+      <ClickEvent />
+      <ChangeEvent />
+      <SubmitEvene />
     </>
   );
 }
