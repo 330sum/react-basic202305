@@ -2,10 +2,11 @@ import React from "react";
 
 // 컴포넌트 : 렌더링의 일정부분의 조각
 // 클래스형 컴포넌트, 함수형 컴포넌트가 있는데 요즘은 다 함수형 사용
-function SayHello() {
+function SayHello(props) {
     return (
         <div>
             <p>안녕</p>
+            {props.children}
             <span>메롱</span>
         </div>
     );
@@ -13,7 +14,7 @@ function SayHello() {
 
 // 화살표 함수로 작성해도 됨
 // function SayHello = () =>
-//     return (
+//      (
 //         <div>
 //             <p>안녕</p>
 //             <span>메롱</span>

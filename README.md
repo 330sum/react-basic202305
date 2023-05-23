@@ -23,3 +23,6 @@ $ npm start
 $ npm install reactstrap
 $ npm install bootstrap
 ```
+
+## git clone시 주의사항
+- `$npm install` 명령을 터미널에 실행하여 라이브러리 설치

@@ -2,6 +2,7 @@ import SayHello from './SayHello';
 import ChangeEvent from './component/chap01_event/ChangeEvent';
 import ClickEvent from './component/chap01_event/ClickEvent';
 import SubmitEvene from './component/chap01_event/SubmitEvent';
+import FoodList from './component/chap02_props/FoodList';
 
 
 function App() {
@@ -21,10 +22,7 @@ function App() {
   // 함수호출문이나 변수참조만 할 수 있음
   return (
     <>
-      { looping() }
-      <ClickEvent />
-      <ChangeEvent />
-      <SubmitEvene />
+      <FoodList />
     </>
   );
 }
