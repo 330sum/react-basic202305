@@ -3,6 +3,8 @@ import ChangeEvent from './component/chap01_event/ChangeEvent';
 import ClickEvent from './component/chap01_event/ClickEvent';
 import SubmitEvene from './component/chap01_event/SubmitEvent';
 import FoodList from './component/chap02_props/FoodList';
+import Counter from './component/chap03_state/Counter';
+import NickName from './component/chap03_state/NickName';
 
 
 function App() {
@@ -22,7 +24,24 @@ function App() {
   // 함수호출문이나 변수참조만 할 수 있음
   return (
     <>
+     <p>**** FoodList 컴포넌트 ****</p>
+     <p>
+  
+     </p>
       <FoodList />
+
+      <p>**** NickName 컴포넌트 ****</p>
+      <NickName />
+      지역변수를 전역변수처럼 쓰게 해주는 것 useState훅
+
+      <p>**** Counter 컴포넌트 ****</p>
+      <Counter />
+
+      {/* 5월22일 */}
+      {/* { looping() }
+      <ClickEvent />
+      <ChangeEvent />
+      <SubmitEvene /> */}
     </>
   );
 }
